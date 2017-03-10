@@ -1,0 +1,4 @@
+
+public enum token_type {
+	LEFT_BRACKET, RIGHT_BRACKET, DOT, SPACE, ID, INT, DOLLAR, END, INVALID
+}
