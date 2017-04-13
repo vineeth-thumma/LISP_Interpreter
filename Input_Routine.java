@@ -17,6 +17,7 @@ public class Input_Routine {
 				get_ID("T");
 				get_ID("NIL");
 			}
+			static SExp dList_global = get_ID("NIL");
 			
 
 	public static void main(String[] args) throws IOException, Invalid_Exception{
@@ -43,6 +44,10 @@ public class Input_Routine {
 				System.out.println();
 				System.out.print("> ");
 				Output(Exp);
+				System.out.println();
+				
+				System.out.print("> ");
+				Output(Evaluator.eval(Exp, get_ID("NIL"), dList_global));
 				System.out.println();
 			}
 			if(token_val == token_type.END)
@@ -151,8 +156,6 @@ public class Input_Routine {
 			System.out.print(")");
 		
 		}
-			
-		
 	}
 	
 	public static void print_SExp(SExp Exp){

@@ -29,12 +29,6 @@ public class SExp {
 			this.right = null;
 		
 		}
-		
-		
-		
-		
-		}
+	}
 	
-	
-
 }
